@@ -1,6 +1,7 @@
-public class test {
 
-	public static void main(String args[]) {
+public class Calculation {
+
+	public static void main(String[] args) {
 
 		try {
 			// 引数の数をチェック
@@ -20,7 +21,7 @@ public class test {
 				System.out.println("計算結果は" + first / second + "です");
 
 				// 引数が２つ以下の時
-			} else if (args.length < 2) {
+			} else {
 				System.out.println("引数が足りません");
 
 				System.exit(0);
@@ -28,7 +29,9 @@ public class test {
 
 			// 引数に文字列を含む時
 		} catch (NumberFormatException e) {
-			System.out.println("引数に文字列があります");
+			System.out.println("数字を指定してください。");
 		}
 	}
-}
+	}
+
+
