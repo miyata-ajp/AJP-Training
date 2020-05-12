@@ -23,15 +23,14 @@ public class Blackjack {
 				int randomValue = random.nextInt(10) + 1;
 
 				// ⑤.⑥取得したランダム数値とランダム数値(子)の合計表示
-				int childTotal = (randomValue + child);
-				System.out.println("数値：" + randomValue + ",合計：" + childTotal);
-				child = childTotal;
+				child = (randomValue + child);
+				System.out.println("数値：" + randomValue + ",合計：" + child);
 
 				// ⑦.⑧合計が21より大きいか比較
 				if (child > 21) {
 					System.out.print("LOSE");
-					System.exit(0);
 					scan.close();
+					System.exit(0);
 				}
 			}
 			// ⑨メッセージを出力
